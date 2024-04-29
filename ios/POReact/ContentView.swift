@@ -14,6 +14,12 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            
+            Spacer()
+            
+            ReactView(moduleName: "TestSingComponent", launchOptions: nil)
+                .frame(height: 400)
         }
         .padding()
     }

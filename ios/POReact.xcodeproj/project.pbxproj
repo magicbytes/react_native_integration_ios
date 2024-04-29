@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FA719188F48B389BB57E1F6 /* Pods_POReact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4641D19DF8E1731F1CFBACC /* Pods_POReact.framework */; };
+		CF2ED026BB2E05C7D7B9413A /* libPods-POReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CE8EE23655E9A92C8118EA /* libPods-POReact.a */; };
 		FA7F6F272BDBAB2800F8B3F7 /* POReactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6F262BDBAB2800F8B3F7 /* POReactApp.swift */; };
 		FA7F6F292BDBAB2800F8B3F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6F282BDBAB2800F8B3F7 /* ContentView.swift */; };
 		FA7F6F2B2BDBAB2900F8B3F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6F2A2BDBAB2900F8B3F7 /* Assets.xcassets */; };
 		FA7F6F2E2BDBAB2900F8B3F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6F2D2BDBAB2900F8B3F7 /* Preview Assets.xcassets */; };
+		FAB9F34A2BDBD3FB004F0B47 /* ReactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9F3492BDBD3FB004F0B47 /* ReactView.swift */; };
+		FAB9F34D2BDBE778004F0B47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9F34C2BDBE778004F0B47 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68CE8EE23655E9A92C8118EA /* libPods-POReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-POReact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		974C6D4DB765E09B9F3145B6 /* Pods-POReact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POReact.release.xcconfig"; path = "Target Support Files/Pods-POReact/Pods-POReact.release.xcconfig"; sourceTree = "<group>"; };
-		F4641D19DF8E1731F1CFBACC /* Pods_POReact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POReact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F6F232BDBAB2800F8B3F7 /* POReact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POReact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F6F262BDBAB2800F8B3F7 /* POReactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POReactApp.swift; sourceTree = "<group>"; };
 		FA7F6F282BDBAB2800F8B3F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA7F6F2A2BDBAB2900F8B3F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7F6F2D2BDBAB2900F8B3F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB9F3492BDBD3FB004F0B47 /* ReactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactView.swift; sourceTree = "<group>"; };
+		FAB9F34B2BDBD4E9004F0B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAB9F34C2BDBE778004F0B47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD460A19F23B80CD4B0CE42A /* Pods-POReact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POReact.debug.xcconfig"; path = "Target Support Files/Pods-POReact/Pods-POReact.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -30,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA719188F48B389BB57E1F6 /* Pods_POReact.framework in Frameworks */,
+				CF2ED026BB2E05C7D7B9413A /* libPods-POReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +45,7 @@
 		0F9029F7DB0B354792CCE560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F4641D19DF8E1731F1CFBACC /* Pods_POReact.framework */,
+				68CE8EE23655E9A92C8118EA /* libPods-POReact.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -51,7 +56,6 @@
 				FD460A19F23B80CD4B0CE42A /* Pods-POReact.debug.xcconfig */,
 				974C6D4DB765E09B9F3145B6 /* Pods-POReact.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,10 +80,13 @@
 		FA7F6F252BDBAB2800F8B3F7 /* POReact */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9F34B2BDBD4E9004F0B47 /* Info.plist */,
 				FA7F6F262BDBAB2800F8B3F7 /* POReactApp.swift */,
 				FA7F6F282BDBAB2800F8B3F7 /* ContentView.swift */,
 				FA7F6F2A2BDBAB2900F8B3F7 /* Assets.xcassets */,
 				FA7F6F2C2BDBAB2900F8B3F7 /* Preview Content */,
+				FAB9F3492BDBD3FB004F0B47 /* ReactView.swift */,
+				FAB9F34C2BDBE778004F0B47 /* AppDelegate.swift */,
 			);
 			path = POReact;
 			sourceTree = "<group>";
@@ -103,6 +110,8 @@
 				FA7F6F1F2BDBAB2800F8B3F7 /* Sources */,
 				FA7F6F202BDBAB2800F8B3F7 /* Frameworks */,
 				FA7F6F212BDBAB2800F8B3F7 /* Resources */,
+				6B546BC97C960A2E1187246C /* [CP] Embed Pods Frameworks */,
+				5ED6D571A5E2FFF7852CDC19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +190,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5ED6D571A5E2FFF7852CDC19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B546BC97C960A2E1187246C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POReact/Pods-POReact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -188,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB9F34D2BDBE778004F0B47 /* AppDelegate.swift in Sources */,
 				FA7F6F292BDBAB2800F8B3F7 /* ContentView.swift in Sources */,
+				FAB9F34A2BDBD3FB004F0B47 /* ReactView.swift in Sources */,
 				FA7F6F272BDBAB2800F8B3F7 /* POReactApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,9 +246,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CC = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -230,6 +276,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -248,14 +295,33 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -264,9 +330,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CC = "";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -293,6 +360,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -305,12 +373,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -326,7 +413,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"POReact/Preview Content\"";
 				DEVELOPMENT_TEAM = J4T54X9MS8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = POReact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -356,7 +445,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"POReact/Preview Content\"";
 				DEVELOPMENT_TEAM = J4T54X9MS8;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = POReact/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
